@@ -1,0 +1,89 @@
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  .hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+    transition: 0.4s;
+  }
+
+  .hamburger_post {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  .hamburger_post span {
+    width: 25px;
+    height: 3px;
+    background-color: #222;
+    margin: 3px 0;
+    transition: 0.4s;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .hamburger {
+      display: flex;
+    }
+
+    .hamburger_post {
+        display: flex;
+      }
+  
+    .nav_links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 77px;
+      left: 60px;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .nav_links_post {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 77px;
+        left: 60px;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        transition: all 0.3s ease-in-out;
+      }
+  
+    .nav_links.active {
+      display: flex;
+    }
+
+    .nav_links_post.active {
+        display: flex;
+      }
+  
+    .nav_links li {
+      margin: 10px 0;
+    }
+
+    .nav_links_post li {
+        margin: 10px 0;
+      }
+  
+    .logout_button {
+      margin-left: auto;
+    }
+
+    .logout_button_post {
+        margin-left: auto;
+      }
+  }
+  
+  

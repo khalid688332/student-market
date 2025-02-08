@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Market | Account Login</title>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="image-section"></div>
+    <div class="form-section" data-aos="fade-up" data-aos-duration="1000">
+        <div class="login-header">
+            <h1 class="login-title">Welcome Back</h1>
+            <p class="login-subtitle">Please login to your account</p>
+        </div>
+        <div class="login-form">
+            <div class="input-group">
+                <label class="input-label" for="LogInEmail">Email</label>
+                <input class="input-field" type="email" id="LogInEmail" required placeholder="Enter your email">
+            </div>
+            <div class="input-group">
+                <label class="input-label" for="LogInPass">Password</label>
+                <input class="input-field" type="password" id="LogInPass" required placeholder="Enter your password">
+            </div>
+            <button class="buy-button" style="width: 100%;" type="submit" id="LogInBtn">Log In</button>
+          </div>
+        <div class="signup-link">
+            <p class="signup-text">Don't have an account? <a class="signup-anchor" href="./index.html"><b>Sign Up for free</b></a></p>
+        </div>
+    </div>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="config.js"></script>
+    <script type="module" src="app.js"></script>
+    <script type="module" src="auth.js"></script>
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

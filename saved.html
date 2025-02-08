@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Market | Dashboard</title>
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/navbar.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar_post" id="navbar_post">
+    <a href="/dashboard.html"><h1 class="brand_post">Student Market</h1></a>
+    <ul class="nav_links_post" id="nav_links_post">
+      <li id="Home"><b>Home</b></li>
+      <li id="MyPosts"><b>My Posts</b></li>
+      <li id="Saved"><b>Saved Posts</b></li>
+      <li id="AddPost"><b>Add A Post</b></li>
+    </ul>
+    <button class="logout_button_post" id="logout_btn"><i class="fa-solid fa-arrow-right-from-bracket"></i></button>
+    <div class="hamburger_post" id="hamburger_post">
+      <span></span>
+      <span></span>
+      <span></span>
+  </div>
+  </nav>
+
+  <section class="hero_post">
+    <div class="header_container_post">
+      <a href="/dashboard.html"><span>Home</span></a>
+        /
+        <span>Saved Posts</span>
+    </div>
+  </section>
+
+    <section class="poster_main_container">
+      <div class="my_poster_header" data-aos="fade-up" data-aos-duration="1000">
+          <h1>My All Saved Posts</h1>
+      </div>
+      <div class="post_container" id="showSavedPosts" data-aos="fade-up" data-aos-duration="1000"></div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer_content">
+        <div class="footer_section">
+          <h3>Quick Links</h3>
+          <div class="footer_links">
+            <span><a href="#">Home</a></span>
+            <span><a href="#">Shop</a></span>
+            <span><a href="#">About Us</a></span>
+            <span><a href="#">Contact</a></span>
+            <span><a href="#">FAQs</a></span>
+          </div>
+        </div>
+        <div class="footer_section">
+          <h3>Contact Us</h3>
+          <p>Email: info@studentmarket.com</p>
+          <p>Phone: +1 (123) 456-7890</p>
+          <p>Address: 123 Campus Street, College Town, ST 12345</p>
+        </div>
+        <div class="footer_section">
+          <h3>Follow Us</h3>
+          <div class="social_icons">
+            <a href="#" class="social_icon">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social_icon">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social_icon">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social_icon">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+        <div class="footer_section">
+          <h3>Newsletter</h3>
+          <p>Stay updated with our latest offers and student discounts!</p>
+          <form class="newsletter_form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer_bottom">
+        <p>&copy; 2025 Student Market. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://kit.fontawesome.com/2ab38ab271.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script type="module" src="config.js"></script>
+    <script type="module" src="app.js"></script>
+    <script type="module" src="saved.js"></script>
+    <script type="module" src="dashboard.js"></script>
+    <script type="module" src="secondNavbar.js"></script>
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

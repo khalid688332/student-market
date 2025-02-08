@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Market | Account Register</title>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <link rel="stylesheet" href="./assets/css/register.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="image-section"></div>
+    <div class="form-section" data-aos="fade-up" data-aos-duration="1000">
+        <div class="signup-header">
+            <h1 class="signup-title">Create Account</h1>
+            <p class="signup-subtitle">Join our student market platform</p>
+        </div>
+        <div class="signup-form">
+            <div class="input-group">
+                <label class="input-label" for="Username">User Name</label>
+                <input class="input-field" type="text" id="Username" required placeholder="Enter your username">
+            </div>
+            <div class="input-group">
+                <label class="input-label" for="SignUpEmail">Email</label>
+                <input class="input-field" type="email" id="SignUpEmail" required placeholder="Enter your email">
+            </div>
+            <div class="input-group">
+                <label class="input-label" for="SignUpPass">Password</label>
+                <input class="input-field" type="password" id="SignUpPass" required placeholder="Create a password">
+            </div>
+            <button class="buy-button" style="width: 100%;" type="submit" id="SignUpBtn">Sign Up</button>
+          </div>
+        <div class="login-link">
+            <p class="login-text">Already have an account? <a class="login-anchor" href="./login.html"><b>Log In</b></a></p>
+        </div>
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="config.js"></script>
+    <script type="module" src="app.js"></script>
+    <script type="module" src="auth.js"></script>
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
